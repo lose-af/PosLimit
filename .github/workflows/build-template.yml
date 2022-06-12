@@ -51,7 +51,7 @@ jobs:
     - name: Build
       working-directory: ${{env.GITHUB_WORKSPACE}}
       run: |
-        MSBuild.exe ./Hunter.sln -property:Configuration=Release
+        MSBuild.exe ./Template.sln -property:Configuration=Release
       shell: bash
     
     - name: MkDirs
